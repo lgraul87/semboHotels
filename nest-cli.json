@@ -1,0 +1,30 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/sambo-hotels/src",
+  "monorepo": true,
+  "root": "apps/sambo-hotels",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/sambo-hotels/tsconfig.app.json"
+  },
+  "projects": {
+    "sambo-hotels": {
+      "type": "application",
+      "root": "apps/sambo-hotels",
+      "entryFile": "main",
+      "sourceRoot": "apps/sambo-hotels/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/sambo-hotels/tsconfig.app.json"
+      }
+    },
+    "sembo-ui": {
+      "type": "application",
+      "root": "apps/sembo-ui",
+      "entryFile": "main",
+      "sourceRoot": "apps/sembo-ui/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/sembo-ui/tsconfig.app.json"
+      }
+    }
+  }
+}
